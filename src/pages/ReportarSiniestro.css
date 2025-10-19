@@ -1,0 +1,214 @@
+.reportar-container {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 40px 50px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+}
+
+.reportar-container h2 {
+  font-size: 1.8rem;
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+
+.reportar-container p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* --- Formulario --- */
+.formulario {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.campo label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.campo input,
+.campo textarea {
+  width: 95%;
+  padding: 12px 14px;
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+.campo select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  border-color: #0d6efd;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.2);
+}
+
+/* --- Botones --- */
+.botones-formulario {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.btn-volver {
+  background-color: #6c757d;
+  color: white;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn-volver:hover {
+  background-color: #565e64;
+  transform: translateY(-1px);
+}
+
+.btn-enviar {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn-enviar:hover {
+  background-color: #0b5ed7;
+  transform: translateY(-1px);
+}
+
+/* --- Popup personalizado --- */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.popup-content {
+  background: white;
+  border-radius: 16px;
+  padding: 30px 40px;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  animation: slideUp 0.3s ease-in-out;
+}
+
+.popup-content h3 {
+  color: #198754;
+  margin-bottom: 20px;
+}
+
+.popup-content p {
+  color: #333;
+  margin: 8px 0;
+}
+
+.btn-cerrar {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn-cerrar:hover {
+  background-color: #0b5ed7;
+  transform: translateY(-1px);
+}
+
+/* --- Animaciones --- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .reportar-container {
+    max-width: 90%;
+    padding: 30px 25px;
+    margin: 60px auto;
+  }
+
+  .btn-enviar,
+  .btn-volver {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .reportar-container {
+    padding: 25px 20px;
+    border-radius: 15px;
+  }
+
+  .popup-content {
+    width: 90%;
+    padding: 25px 20px;
+  }
+
+  .popup-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .btn-cerrar {
+    width: 100%;
+  }
+}

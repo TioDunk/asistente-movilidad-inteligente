@@ -1,0 +1,73 @@
+.banner-institucional {
+  width: 100%;
+  background-color: #0943b5;
+  color: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+}
+
+.banner-content {
+  width: 90%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.banner-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0 40px;
+}
+
+.logo-gov {
+  width: 110px;
+  height: auto;
+}
+
+.separator {
+  width: 2px;
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.texto-mintransporte h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #ffffff;
+}
+
+.texto-mintransporte p {
+  font-size: 0.85rem;
+  margin: 0;
+  color: #f2f2f2;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .banner-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .separator {
+    display: none;
+  }
+
+  .logo-gov {
+    width: 90px;
+  }
+
+  .texto-mintransporte h1 {
+    font-size: 1rem;
+  }
+
+  .texto-mintransporte p {
+    font-size: 0.8rem;
+  }
+}

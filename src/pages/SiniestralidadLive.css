@@ -1,0 +1,121 @@
+.siniestralidad-container {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.siniestralidad-container h2 {
+  font-size: 1.8rem;
+  color: #d9534f;
+  margin-bottom: 15px;
+}
+
+.siniestralidad-container p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.mapa-container {
+  width: 100%;
+  height: 500px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+/* --- Botones inferiores --- */
+.botones-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.btn-volver {
+  background-color: #0d6efd;
+  color: white;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn-volver:hover {
+  background-color: #0b5ed7;
+  transform: translateY(-1px);
+}
+
+.btn-reportar {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn-reportar:hover {
+  background-color: #b02a37;
+  transform: translateY(-1px);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .siniestralidad-container {
+    padding: 25px 20px;
+    margin: 50px auto;
+  }
+
+  .mapa-container {
+    height: 400px;
+  }
+
+  .botones-container {
+    gap: 10px;
+  }
+
+  .btn-volver,
+  .btn-reportar {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .siniestralidad-container {
+    padding: 20px 15px;
+    border-radius: 15px;
+  }
+
+  .mapa-container {
+    height: 350px;
+  }
+
+  .siniestralidad-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .siniestralidad-container p {
+    font-size: 0.95rem;
+  }
+
+  .btn-volver,
+  .btn-reportar {
+    font-size: 0.95rem;
+    padding: 10px 18px;
+  }
+}
