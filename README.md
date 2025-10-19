@@ -42,7 +42,7 @@ Integra componentes que conectan con servicios predictivos y APIs REST para most
 
 ```bash
 git clone <url-del-repositorio>
-cd asistente-movilidad-front
+cd asistente-movilidad-inteligente
 ```
 
 ### 2. Instalar dependencias
@@ -72,15 +72,20 @@ asistente-movilidad-front/
 ├── src/
 │   ├── components/
 │   │   ├── BannerInstitucional.tsx
-│   │   └── MapView.tsx
+│   │   └── BannerInstitucional.css
 │   ├── pages/
 │   │   ├── RutaOptima.tsx
+│   │   ├── RutaOptima.css
 │   │   ├── SiniestralidadLive.tsx
-│   │   └── ReportarSiniestro.tsx
+│   │   ├── SiniestralidadLive.css
+│   │   ├── ReportarSiniestro.tsx
+│   │   └── ReportarSiniestro.css
 │   ├── services/
-│   │   ├── rutaOptimaService.ts
+│   │   ├── EstadisticasService.ts
 │   │   ├── PredecirSiniestroService.ts
-│   │   └── ReportarSiniestroService.ts
+│   │   ├── ReportarSiniestroService.ts
+│   │   ├── RutaOptimaService.ts
+│   │   └── SiniestralidadService.ts
 │   └── App.tsx
 ├── public/
 │   └── LogoMinTransporte.png
